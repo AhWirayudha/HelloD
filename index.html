@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Doctor Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+	<script src="lib/jquery.min.js"></script> 
+	<script type="text/javascript" src="lib/editNotes.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+	<script src="lib/cordova-2.1.0.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+  </head>
+
+  <body onload="init();">
+<div class="container">
+
+      <div class="row clearfix">
+		            <h2></h2>
+			<div class="navbar">
+				<div class="navbar-inner">
+				<a class="brand" href="mainpage.html">Doctor Notes</a>
+				</div>
+			</div>
+        <div class="content">
+
+            <hr>
+<form class="form" id="components" type="post" onsubmit="addNotesx(); return false;">
+<fieldset>			
+  <div class="tabbable">
+  <div class="tab-content">
+            <ul class="nav nav-tabs" id="navtab">
+              <li class="active"><a href="#1" data-toggle="tab">Identity</a></li>
+              <li class><a href="#2" data-toggle="tab">Clinical Status</a></li>
+			  <li class><a href="#3" data-toggle="tab">Lab Result</a></li>
+			  <li class><a href="#4" data-toggle="tab">Photo</a></li>
+              <!-- <li class><a href="#4" data-toggle="tab">Photo</a></li> -->
+              
+            </ul>
+			<!-- uji form -->
+			
+  <div class="tab-pane active" id="1">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class=""></legend>
+      </div>
+
+    <div class="control-group">
+          <label class="control-label"></label>		  
+        </div>
+		<div id="details" style="display:show">
+			<table class="table table-bordered">
+      		<thead>
+      		
+      		</thead>
+      		<tbody></tbody>
+      	</table>
+      </div>
+	  <div id="status3"></div>
+    </fieldset>
+  </div>
+  
+ <div class="tab-pane" id="2">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class=""></legend>
+      </div>
+
+    <div class="control-group">
+          <label class="control-label"></label>
+
+          <!-- Button -->
+          <div class="controls">
+          </div>
+		  
+        </div>
+		
+		<div id="details2" style="display:show">
+			<table class="table table-bordered">
+      		<thead>
+
+      		</thead>
+      		<tbody></tbody>
+      	</table>
+      </div>
+    <div id="status4"></div>
+    </fieldset>
+ </div>
+ 
+   <div class="tab-pane" id="3">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class=""></legend>
+      </div>
+
+    <div class="control-group">
+          <label class="control-label"></label>		  
+        </div>
+		<div id="details3" style="display:show">
+			<table class="table table-bordered">
+      		<thead>
+      		
+      		</thead>
+      		<tbody></tbody>
+      	</table>
+      </div>
+	  <div id="status5"></div>
+    </fieldset>
+  </div>
+ 
+  <div class="tab-pane" id="4">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class=""></legend>
+      </div>
+
+    <div class="control-group">
+          <label class="control-label"></label>		  
+        </div>
+		<div><span>in reserved</span></div>
+		<div><span></span></div>
+    </fieldset>
+  </div>
+
+ 
+ </div>
+ </div>
+ 
+   </fieldset>
+  <div>
+  <button type="submit" class="btn btn-primary"  value="add notes">Save</button>
+  </div>
+  </form>
+  
+  
+  </div>
+  </div>
+  
+
+  
+  <!-- row -->
+          <div class="row clearfix">
+  		  	<div class="navbar">
+				<div class="navbar-inner">
+				<a class="brand" href="#">Uji Coba</a>
+				</div>
+			</div>
+          </div>
+        </div> <!-- /container -->
+        
+      </body>
+    </html>
